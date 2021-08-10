@@ -1,0 +1,25 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" 
+   Inherits="StoreEverything.Pages.Admin.Admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" href="~/Content/AdminStyles.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <h1>StoreEverything: admin-panel</h1>
+        <div class="adminContent">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <div id="nav">
+        <a href="<%= OrdersUrl %>">Order management</a>
+        <a href="<%= ProductsUrl %>">Directory management</a>
+    </div>
+</body>
+</html>
